@@ -1,0 +1,20 @@
+<h1>Dodaj nowy zespół</h1>
+
+<%= form_for(@team) do |f| %>
+  <div class="field">
+    <%= f.label "Adres e-mail" %><br>
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :nazwa %><br>
+    <%= f.text_field :nazwa %>
+  </div>
+  <div class="field">
+    <%= f.label :kategoria %><br>
+    <%= f.text_field :kategoria %>
+  </div>
+  
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

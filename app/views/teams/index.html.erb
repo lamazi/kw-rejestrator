@@ -1,0 +1,5 @@
+<h1>Lista zarejestrowanych zespołów</h1>
+
+<% @teams.each do |t| %>
+  <p><%= link_to t.nazwa, t %></p>
+<% end %>
