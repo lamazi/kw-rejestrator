@@ -8,6 +8,9 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
+  username: <%= ENV['kwr_user'] %>
+  password: <%= ENV['zaq12wsx'] %>
+  host:     <%= ENV['localhost'] %>
 
 development:
   <<: *default
