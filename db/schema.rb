@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160731112402) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "teams", force: :cascade do |t|
     t.string   "nazwa"
     t.string   "kategoria"
