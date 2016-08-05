@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require idea/custom.js
+//= require idea/template.js
 //= require_tree .

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :teams
-  root 'teams#new'
+  root 'static#landing'
+  get "/:page" => "static#show", :as => 'landing'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

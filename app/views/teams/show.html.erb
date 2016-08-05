@@ -1,3 +1,13 @@
-<h1><%= @team.nazwa %></h1>
-<%= @team.kategoria %><br>
-<%= @team.mail %>
+<section class="main-container">
+  <div class="container">
+    
+    <div class="alert alert-success" role="alert">
+    	<strong>Zespół pomyślnie zgłoszony!</strong> Możesz iść się wspinać.
+    </div>
+    
+    <h2><%= @team.nazwa %></h2>
+    <%= @team.kategoria %><br>
+    <%= @team.mail %>
+
+  </div>
+</section>

@@ -6,9 +6,9 @@ class TeamsController < ApplicationController
   def create
     @team = Team.new(team_params)
     if @team.save
-        redirect_to @team, alert: "Udalo sie zapisac."
+        redirect_to @team
     else
-        redirect_to new_team_path, alert: "Error."
+        render 'new'
     end
   end
 
@@ -18,6 +18,12 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+  end
+  
+  def destroy
+		@team = Team.find(params[:id])
+		@team.destroy
+		redirect_to teams_path
   end
   
   private
