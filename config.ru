@@ -2,4 +2,6 @@
 
 require ::File.expand_path('../config/environment', __FILE__)
 run Rails.application
-$stdout.sync = true
+
+#To podobno sprawia, że logi sie zapisuja na biezaco
+#$stdout.sync = true 
