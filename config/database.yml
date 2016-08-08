@@ -23,6 +23,6 @@ test:
   <<: *default
   database: kwrdb_test
 
-production:
-  <<: *default
-  database: kwrdb_production
+#production:
+#  <<: *default
+#  database: kwrdb_production
