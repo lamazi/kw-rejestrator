@@ -1,0 +1,38 @@
+<!-- background image -->
+<!-- <div class="fullscreen-bg"></div> -->
+
+<!-- main-container start -->
+<!-- ================ -->
+<section class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="main col-md-12">
+				<!-- logo -->
+				<div class="logo">
+					<img id="logo" src="/assets/sokole_logo.png" alt="Góry Sokole" width="200">
+				</div>
+		
+				<div class="form-block center-block">
+					<h2 class="title">Rejestracja zamówienia</h2>
+					<hr>
+
+					<div class="contact-form">
+						<%= bootstrap_form_for(@order, layout: :horizontal, label_col: "col-sm-3", control_col: "col-sm-8") do |f| %>
+
+							<%= f.text_field :nazwa, class: "form-control", icon: "flag", label: "Imię i nazwisko", placeholder: 'Imię i nazwisko' %>
+							<%= f.text_field :email, class: "form-control", icon: "envelope", label: "Adres e-mail", placeholder: 'Adres e-mail' %>
+							<%= f.text_field :legitka, class: "form-control", icon: "pencil", label: "Legitymacja", placeholder: 'Numer legitymacji KW' %>
+							<%= f.text_field :ilosc, class: "form-control", icon: "book", label: "Ilość", value: '1' %>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-8">
+									<%= f.submit 'Zapisz' %>
+		          	</div>	
+							</div>
+						<% end %>
+	        </div>
+				</div>
+      </div>
+    </div>	
+  </div>
+</section>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  resources :orders
+
   resources :teams
   root 'static#landing'
   get "/:page" => "static#show", :as => 'landing'
